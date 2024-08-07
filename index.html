@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Hospital</title>
+    <!-- <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .header-hero {
+            background: url('baymaxhospital.jfif') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            height: 70vh;
+        }
+
+        .header-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35); /* Adjust the opacity as needed */
+            z-index: 0;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 999;
+        }
+        .hero-text {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your website content goes here -->
+    <header class="bg-red-500 py-4 header-hero">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">Bay Hospital</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white hover:text-blue-200">Home</a></li>
+                    <li><a href="#" class="text-white hover:text-blue-200">About</a></li>
+                    <li><a href="#" class="text-white hover:text-blue-200">Services</a></li>
+                    <li><a href="#" class="text-white hover:text-blue-200">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container mx-auto mt-8">
+            <div class="flex justify-center items-center mt-4">
+                <a href="#"
+                    class="bg-white text-red-500 py-2 px-4 rounded-full shadow-lg hover:bg-red-500 hover:text-white">Book
+                    an Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-red-500 mb-4">About Bay Hospital</h2>
+            <p class="text-gray-700 mb-4">
+                Bay Hospital is dedicated to providing the highest quality healthcare services to our community. Our
+                team of experienced professionals is committed to ensuring the well-being and satisfaction of our
+                patients.
+            </p>
+            <p class="text-gray-700">
+                Our culture is built on compassion, innovation, and excellence. We strive to create a supportive and
+                inclusive environment for both our patients and staff, fostering a sense of belonging and continuous
+                improvement.
+            </p>
+
+            <!-- Carousel -->
+            <div class="carousel relative shadow-2xl bg-white mt-8">
+                <div class="carousel-inner relative overflow-hidden w-full">
+                    <!-- Slide 1 -->
+                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                        hidden="" checked="checked">
+                    <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                        <img src="imgq.jfif" class="block w-full h-full object-cover">
+                    </div>
+                    <!-- Slide 2 -->
+                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                        hidden="">
+                    <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                        <img src="img2.jfif" class="block w-full h-full object-cover">
+                    </div>
+                    <!-- Slide 3 -->
+                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                        hidden="">
+                    <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                        <img src="img3.jfif" class="block w-full h-full object-cover">
+                    </div>
+
+                    <!-- Add additional indicators for each slide -->
+                    <ol class="carousel-indicators">
+                        <li class="inline-block mr-3">
+                            <label for="carousel-1"
+                                class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-red-500">•</label>
+                        </li>
+                        <li class="inline-block mr-3">
+                            <label for="carousel-2"
+                                class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-red-500">•</label>
+                        </li>
+                        <li class="inline-block mr-3">
+                            <label for="carousel-3"
+                                class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-red-500">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- User Testimonials Section -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-red-500 mb-4">What Our Patients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial p-4 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                    <p class="text-gray-700 mb-4">
+                        "Bay Hospital provided exceptional care during my stay. The staff was attentive and compassionate, making my recovery process much smoother."
+                    </p>
+                    <p class="text-gray-700 font-bold">- John Doe</p>
+                </div>
+                <div class="testimonial p-4 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                    <p class="text-gray-700 mb-4">
+                        "I am grateful for the excellent service and support I received at Bay Hospital. The facilities are top-notch, and the medical team is highly skilled."
+                    </p>
+                    <p class="text-gray-700 font-bold">- Jane Smith</p>
+                </div>
+                <div class="testimonial p-4 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                    <p class="text-gray-700 mb-4">
+                        "The culture at Bay Hospital is truly remarkable. Everyone works together to ensure the best outcomes for patients, and it shows in the quality of care."
+                    </p>
+                    <p class="text-gray-700 font-bold">- Emily Johnson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Services Section -->
+        <section class="bg-white py-8">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-red-500 mb-4">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Booking an Appointment -->
+                    <div class="service p-4 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        <h3 class="text-xl font-bold mb-2">Booking an Appointment</h3>
+                        <p class="text-gray-700 mb-4">
+                            Easily book an appointment with our experienced doctors through our online portal or by calling our helpline.
+                        </p>
+                    </div>
+                    <!-- Emergency Services -->
+                    <div class="service p-4 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        <h3 class="text-xl font-bold mb-2">Emergency Services</h3>
+                        <p class="text-gray-700 mb-4">
+                            Our emergency department is open 24/7, providing immediate care for critical conditions with state-of-the-art facilities.
+                        </p>
+                    </div>
+                    <!-- Super Speciality Facilities -->
+                    <div class="service p-4 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        <h3 class="text-xl font-bold mb-2">Super Speciality Facilities</h3>
+                        <p class="text-gray-700 mb-4">
+                            We offer advanced medical treatments and surgeries in various super specialities, ensuring the best care for our patients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Navigation Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:text-red-500">Home</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-red-500">About Us</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-red-500">Services</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-red-500">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="mb-2">Phone: (123) 456-7890</p>
+                <p class="mb-2">Email: info@bayhospital.com</p>
+                <p class="mb-2">Address: 123 Bay Hospital St, City, State, ZIP</p>
+            </div>
+            <!-- Social Media Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <ul class="flex space-x-4">
+                    <li>
+                        <a href="#" class="hover:text-red-500">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.794.715-1.794 1.763v2.314h3.587l-.467 3.622h-3.12v9.294h6.116c.733 0 1.325-.591 1.325-1.324v-21.351c0-.733-.592-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-red-500">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.719 0-4.924 2.205-4.924 4.924 0 .386.044.762.128 1.124-4.092-.205-7.719-2.165-10.148-5.144-.424.729-.666 1.574-.666 2.476 0 1.708.869 3.216 2.188 4.099-.807-.026-1.566-.247-2.228-.616v.062c0 2.385 1.697 4.374 3.946 4.827-.413.112-.849.171-1.296.171-.317 0-.626-.031-.928-.088.627 1.956 2.444 3.379 4.6 3.419-1.68 1.318-3.809 2.104-6.115 2.104-.398 0-.79-.023-1.175-.069 2.179 1.396 4.768 2.209 7.548 2.209 9.057 0 14.01-7.507 14.01-14.01 0-.213-.005-.426-.014-.637.961-.694 1.796-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-red-500">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c-5.488 0-9.837 4.449-9.837 9.837 0 4.355 2.822 8.065 6.737 9.387-.092-.799-.175-2.027.037-2.899.191-.822 1.229-5.229 1.229-5.229s-.313-.625-.313-1.548c0-1.451.842-2.533 1.891-2.533.891 0 1.322.669 1.322 1.471 0 .897-.571 2.238-.865 3.484-.246 1.037.522 1.882 1.548 1.882 1.857 0 3.292-1.959 3.292-4.785 0-2.5-1.8-4.243-4.378-4.243-2.982 0-4.735 2.237-4.735 4.548 0 .897.344 1.861.774 2.384.085.103.097.194.071.299-.077.322-.252 1.037-.286 1.181-.045.188-.148.229-.344.138-1.285-.598-2.086-2.474-2.086-3.986 0-3.238 2.351-6.215 6.785-6.215 3.563 0 6.336 2.54 6.336 5.937 0 3.542-2.229 6.391-5.324 6.391-1.038 0-2.014-.54-2.35-1.178l-.639 2.426c-.231.878-.862 1.978-1.287 2.648.971.299 1.993.461 3.057.461 5.488 0 9.837-4.449 9.837-9.837 0-5.388-4.449-9.837-9.837-9.837z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-red-500">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.23 0h-20.46c-.974 0-1.77.796-1.77 1.77v20.46c0 .974.796 1.77 1.77 1.77h20.46c.974 0 1.77-.796 1.77-1.77v-20.46c0-.974-.796-1.77-1.77-1.77zm-12.307 20.452h-3.692v-10.307h3.692v10.307zm-1.846-11.769c-1.184 0-2.146-.962-2.146-2.146s.962-2.146 2.146-2.146 2.146.962 2.146 2.146-.962 2.146-2.146 2.146zm13.153 11.769h-3.692v-5.538c0-1.318-.026-3.014-1.837-3.014-1.837 0-2.118 1.434-2.118 2.918v5.634h-3.692v-10.307h3.538v1.407h.051c.492-.931 1.693-1.837 3.484-1.837 3.726 0 4.414 2.451 4.414 5.64v5.097z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('.carousel-open');
+            let currentIndex = 0;
+
+            function showNextSlide() {
+                slides[currentIndex].checked = false;
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].checked = true;
+            }
+
+            setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+        });
+        window.watsonAssistantChatOptions = {
+            integrationID: "c1ad0206-613a-4e07-8b08-1348fd3f11e8", // The ID of this integration.
+            region: "jp-tok", // The region your integration is hosted in.
+            serviceInstanceID: "d4adc5ed-b858-4fa8-b0d7-56c00de569ed", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
+</html>
